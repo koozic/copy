@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!--         
+플렉빌드패스->lib(탭)
+web(플)-> web-inf->lib
+cos.jar
+
+파일 업로드하는경우 html에서 신경쓸게 단 2개
+1.post
+2.enctype(포장방식)을 multipart/from-data(박스포장)
+
+ -->
+
+<form action="FileUpload" method="post" enctype="multipart/form-data">
+
+이름:<input name="name"><br>
+사진:<input name="pic" type="file"><br>
+기타:<input name="etc"type="file"><br>
+<button>upload!</button>
+
+
+
+</form>
+</body>
+</html>

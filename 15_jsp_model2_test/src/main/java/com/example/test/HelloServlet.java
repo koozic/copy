@@ -1,0 +1,25 @@
+package com.example.test;
+
+import java.io.*;
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
+import javax.servlet.annotation.*;
+
+@WebServlet(name = "helloServlet", value = "/hello-servlet")
+public class HelloServlet extends HttpServlet {
+
+
+//C 여기는 교통정리만 한마디로 교통경찰!!!
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+
+        Model.makeInfo(request);
+
+        //어디로??
+        request.getRequestDispatcher("output.jsp").forward(request,response);
+
+
+        }
+
+    public void destroy() {
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="bmi_byGPT.css">
+</head>
+<body>
+	<form action="bmi_byGPT.jsp" method="post" enctype="multipart/form-data">
+		<div>
+			<h1>BMI 검사</h1>
+		</div>
+		<div>
+			<div>
+				이름<input class="input-box" name="name" placeholder="필수,2글자 이상">
+			</div>
+		</div>
+		<div>
+			<div>
+				키(CM)<input class="input-box" name="height"
+					placeholder="3자리 이상, 숫자만">
+			</div>
+		</div>
+		<div>
+			<div>
+				체중(KG)<input class="input-box" name="weight" placeholder="숫자만">
+			</div>
+		</div>
+		<div class="items">
+		<div>사진</div>
+			<div><input type="file" name="imgF"></div> 
+		</div>
+
+		<div>
+			<button>계산</button>
+		</div>
+	</form>
+</body>
+</html>

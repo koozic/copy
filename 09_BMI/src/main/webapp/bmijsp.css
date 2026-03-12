@@ -1,0 +1,56 @@
+body{
+    background:#eeeeee;
+    font-family:Arial;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* 전체 카드 */
+.container{
+    width:320px;
+    background:#f5f6ff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 제목 */
+h1{
+    text-align:center;
+    color:#4b57a5;
+    margin-bottom:25px;
+}
+
+/* 한 줄 */
+.row{
+    display:flex;
+    justify-content:space-between;
+    margin:12px 0;
+    font-size:16px;
+}
+
+/* 값 */
+.value{
+    font-weight:bold;
+}
+
+/* 버튼 */
+button{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    border:none;
+    border-radius:8px;
+    background:linear-gradient(90deg,#c9c5f3,#2f3f8f);
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+.container img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+}
